@@ -1,47 +1,107 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
 </script>
 
 <main>
-  <div>
-    <a href="https://vite.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
+  <div class="maintenance-container">
+    <div class="logo-container">
+      <img src="/favicon.svg" class="logo light-logo" alt="WattMaven Logo" />
+    </div>
+
+    <h1>We'll be back.</h1>
+
+    <p class="message">
+      We're performing scheduled maintenance.<br />
+      Please check
+      <a href="https://status.wattmaven.com" target="_blank"
+        >status.wattmaven.com</a
+      > for updates.
+    </p>
   </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
 </main>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #09090b;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :global(#app) {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .maintenance-container {
+    padding: 0 20px;
+    max-width: 600px;
+  }
+
+  .logo-container {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+    height: auto;
+    max-width: 150px;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  .dark-logo {
+    display: none;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
   }
-  .read-the-docs {
-    color: #888;
+
+  .message {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #1c1c22;
+    margin-top: 0;
+  }
+
+  .message a {
+    color: #5c6600;
+    text-decoration: underline;
+  }
+
+  /* Adjust for dark mode */
+  @media (prefers-color-scheme: dark) {
+    :global(body) {
+      background-color: #0a0706;
+      color: #fafafa;
+    }
+
+    .message {
+      color: #e4e4e7;
+    }
+
+    .message a {
+      color: #eeff99;
+      text-decoration: underline;
+    }
   }
 </style>
