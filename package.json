@@ -18,7 +18,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "clean": "rimraf .next node_modules",
+    "clean": "rimraf dist .turbo .next node_modules",
     "pre-commit-tasks": "turbo format:check lint:check build",
     "ci:smoke-test": "turbo format:check lint:check build"
   },
