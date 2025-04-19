@@ -21,6 +21,7 @@
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
   :global(body) {
     margin: 0;
@@ -71,6 +72,7 @@
   }
 
   h1 {
+    font-family: "Playfair Display", serif;
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 16px;
