@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "5.2.6",
     "eslint-plugin-svelte": "3.5.1",
     "globals": "16.0.0",
-    "lefthook": "1.11.11",
+    "lefthook": "1.11.12",
     "npm-run-all2": "7.0.2",
     "prettier": "3.5.3",
     "prettier-plugin-organize-imports": "4.1.0",
@@ -43,10 +43,10 @@
     "rimraf": "6.0.1",
     "svelte": "5.28.2",
     "svelte-check": "4.1.6",
-    "turbo": "2.5.0",
+    "turbo": "2.5.2",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.31.0",
+    "typescript-eslint": "8.31.1",
     "vite": "6.3.4"
   },
-  "packageManager": "pnpm@10.9.0"
+  "packageManager": "pnpm@10.10.0"
 }
